@@ -2,23 +2,26 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [openMenu, setOpenMenu] = useState(null); // 'projs', 'about' или null
-  const [locked, setLocked] = useState(false);    // true, если меню зафиксировано кликом
+  const [openMenu, setOpenMenu] = useState(null); // 'projs', 'about', или null
+  const [locked, setLocked] = useState(false);
 
   const handleHover = (menu) => {
     if (!locked) setOpenMenu(menu);
   };
 
-  const handleLeave = () => {
-    if (!locked) setOpenMenu(null);
+  const handleLeave = (menu) => {
+    // Закрываем только если меню не зафиксировано
+    if (!locked && openMenu === menu) setOpenMenu(null);
   };
 
-  const handleClick = (menu) => {
-    // если кликаем на то же меню — разблокировать
+  const handleClick = (menu, e) => {
+    e.preventDefault();
     if (locked && openMenu === menu) {
+      // Разблокировать
       setLocked(false);
       setOpenMenu(null);
     } else {
+      // Зафиксировать
       setOpenMenu(menu);
       setLocked(true);
     }
@@ -34,7 +37,7 @@ export default function Header() {
             className={`flex items-center justify-center lg:justify-end gap-3 md:gap-4 lg:gap-[20px] text-sm md:text-base lg:text-2xl absolute lg:static left-0 top-full transition-all duration-300
               ${openMenu === "projs" ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-2"}`}
             onMouseEnter={() => handleHover("projs")}
-            onMouseLeave={handleLeave}
+            onMouseLeave={() => handleLeave("projs")}
           >
             <Link to="/live-sound" className="text-white hover:opacity-70 transition-opacity">live sound</Link>
             <Link to="/light-staging" className="text-white hover:opacity-70 transition-opacity">light staging</Link>
@@ -45,16 +48,14 @@ export default function Header() {
 
           {/* CENTER LOGO */}
           <div className="flex items-center justify-center gap-3 md:gap-4 lg:gap-[21px] my-4 lg:my-0">
+
             {/* PROJS */}
             <Link
               to="/projects"
               className={`text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap transition-opacity ${openMenu === "projs" ? "opacity-100 font-bold" : "hover:opacity-70"}`}
               onMouseEnter={() => handleHover("projs")}
-              onMouseLeave={handleLeave}
-              onClick={(e) => {
-                e.preventDefault(); // чтобы не переходить по ссылке при фиксации
-                handleClick("projs");
-              }}
+              onMouseLeave={() => handleLeave("projs")}
+              onClick={(e) => handleClick("projs", e)}
             >
               PROJS
             </Link>
@@ -84,11 +85,8 @@ export default function Header() {
               to="/about"
               className={`text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap transition-opacity ${openMenu === "about" ? "opacity-100 font-bold" : "hover:opacity-70"}`}
               onMouseEnter={() => handleHover("about")}
-              onMouseLeave={handleLeave}
-              onClick={(e) => {
-                e.preventDefault();
-                handleClick("about");
-              }}
+              onMouseLeave={() => handleLeave("about")}
+              onClick={(e) => handleClick("about", e)}
             >
               ABOUT
             </Link>
@@ -99,7 +97,7 @@ export default function Header() {
             className={`flex flex-wrap items-center justify-center lg:justify-start gap-4 md:gap-8 lg:gap-[111px] text-sm md:text-base lg:text-2xl absolute lg:static right-0 top-full transition-all duration-300
               ${openMenu === "about" ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-2"}`}
             onMouseEnter={() => handleHover("about")}
-            onMouseLeave={handleLeave}
+            onMouseLeave={() => handleLeave("about")}
           >
             <Link to="/cv" className="text-white hover:opacity-70 transition-opacity">cv</Link>
             <Link to="/" className="text-white font-bold hover:opacity-70 transition-opacity">bio</Link>
