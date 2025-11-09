@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="w-full bg-black">
       <div className="max-w-[1920px] mx-auto px-4 md:px-8 lg:px-[134px] py-6 lg:py-0 lg:h-[150px] flex items-center justify-center">
-        <nav className="relative w-full flex items-center justify-between px-4 lg:px-[134px] py-4 lg:py-0">
+        <nav className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-4 lg:gap-[58px] items-center">
           {/* Left Navigation */}
           <div className="flex items-center justify-center lg:justify-end gap-3 md:gap-4 lg:gap-[26px] text-sm md:text-base lg:text-2xl">
             <Link to="/live-sound" className="text-white hover:opacity-70 transition-opacity whitespace-nowrap">
@@ -25,7 +25,7 @@ export default function Header() {
           </div>
 
           {/* Center Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center gap-3 md:gap-4 lg:gap-[21px] my-4 lg:my-0">
+          <div className="flex items-center justify-center gap-3 md:gap-4 lg:gap-[21px] my-4 lg:my-0">
             <Link to="/projects" className="text-white text-2xl md:text-3xl lg:text-[40px] hover:opacity-70 transition-opacity whitespace-nowrap">
               PROJS
             </Link>
