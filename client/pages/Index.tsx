@@ -7,7 +7,7 @@ export default function Index() {
       <Header />
       
       <main className="flex-1 flex items-center justify-center px-4 md:px-8 lg:px-[223px] py-12 md:py-16 lg:py-[98px]">
-        <div className="w-full max-w-[1474px] grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 md:gap-8 lg:gap-[36px] items-center">
+        <div className="w-full max-w-[1474px] grid grid-cols-1 lg:grid-cols-[1fr_1.5fr_1fr] gap-6 md:gap-8 lg:gap-[36px] items-center">
           {/* Left Text */}
           <div className="text-[#F8F8F8] text-sm md:text-lg lg:text-2xl text-center lg:text-right leading-normal order-1 lg:order-1 self-start">
             Leir, междисциплинарная художница, родилась в 2001 году в Новомосковске, живёт и работает в Москве.
