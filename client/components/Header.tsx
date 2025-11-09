@@ -29,11 +29,23 @@ export default function Header() {
             <Link to="/projects" className="text-white text-2xl md:text-3xl lg:text-[40px] hover:opacity-70 transition-opacity whitespace-nowrap">
               PROJS
             </Link>
-            <div className="relative w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[148px] lg:h-[139px] flex items-center justify-center">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-full h-full bg-[#D9D9D9] blur-[9.75px]" />
-              </div>
-              <div className="relative w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[75px] lg:h-[75px] rounded-full bg-black" />
+            <div className="relative w-[100px] h-[94px] md:w-[120px] md:h-[113px] lg:w-[148px] lg:h-[139px] flex items-center justify-center">
+              <svg className="w-full h-full" viewBox="0 0 190 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="eclipse-blur" x="0" y="0" width="189.443" height="175.103" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="9.75" result="effect1_foregroundBlur"/>
+                  </filter>
+                </defs>
+                <g filter="url(#eclipse-blur)">
+                  <path d="M82.2695 19.7192L97.0875 65.3241H145.039L106.245 93.5095L121.063 139.114L82.2695 110.929L43.4757 139.114L58.2936 93.5095L19.4998 65.3241H67.4516L82.2695 19.7192Z" fill="#D9D9D9"/>
+                  <path d="M138.115 19.5L128.325 66.4418L169.944 90.2584L122.274 95.4534L112.484 142.395L92.8128 98.6641L45.1432 103.859L80.6552 71.6368L60.9838 27.9057L102.603 51.7223L138.115 19.5Z" fill="#D9D9D9"/>
+                  <path d="M153.88 59.3662L123.088 96.1252L148.533 136.769L104.057 118.844L73.2653 155.603L76.5702 107.765L32.095 89.839L78.6127 78.1994L81.9176 30.3616L107.362 71.0057L153.88 59.3662Z" fill="#D9D9D9"/>
+                  <circle cx="92.7695" cy="85.2192" r="46.5" fill="#D9D9D9"/>
+                </g>
+                <circle cx="93.7695" cy="85.2192" r="37.5" fill="black"/>
+              </svg>
             </div>
             <Link to="/about" className="text-white text-2xl md:text-3xl lg:text-[40px] hover:opacity-70 transition-opacity whitespace-nowrap">
               ABOUT
