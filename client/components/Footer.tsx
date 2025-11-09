@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="flex justify-start animate-scroll whitespace-nowrap lg:gap-[39px]">
               {/* Repeat contacts multiple times for continuous scroll */}
               {[...Array(8)].map((_, groupIndex) => (
-                <div key={groupIndex} className="flex items-center gap-6 md:gap-8 lg:gap-[39px] ">
+                <div key={groupIndex} className="flex items-center gap-6 md:gap-8 lg:gap-[39px]">
                   {contacts.map((contact, index) => (
                     <a
                       key={`${groupIndex}-${index}`}
