@@ -57,7 +57,7 @@ export default function Header() {
             </Link>
 
             {/* SVG LOGO */}
-            <div className="relative w-[170px] h-[170px] md:w-[170px] md:h-[170px] lg:w-[170px] lg:h-[170px] flex items-center justify-center">
+            <div className="relative w-[148px] h-[139px] md:w-[148px] md:h-[139px] lg:w-[148px] lg:h-[139px] flex items-center justify-center">
               <svg className="w-full h-full" viewBox="0 0 190 176" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <filter id="eclipse-blur" x="0" y="0" width="189.443" height="175.103" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
