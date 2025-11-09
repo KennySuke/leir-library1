@@ -51,7 +51,7 @@ export default function Header() {
               onMouseEnter={() => handleHover("left", true)}
               onMouseLeave={() => handleHover("left", false)}
               onClick={(e) => handleClick("left", e)}
-              className={`text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap transition-opacity ${leftOpen ? "opacity-100 font-bold" : "hover:opacity-70"}`}
+              className="text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap hover:opacity-70 transition-opacity"
             >
               PROJS
             </Link>
@@ -82,7 +82,7 @@ export default function Header() {
               onMouseEnter={() => handleHover("right", true)}
               onMouseLeave={() => handleHover("right", false)}
               onClick={(e) => handleClick("right", e)}
-              className={`text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap transition-opacity ${rightOpen ? "opacity-100 font-bold" : "hover:opacity-70"}`}
+              className="text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap hover:opacity-70 transition-opacity"
             >
               ABOUT
             </Link>
