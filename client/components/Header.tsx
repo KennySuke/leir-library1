@@ -42,7 +42,7 @@ export default function Header() {
     transition-all duration-300 transform
     ${leftOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "opacity-0 translate-x-1/2 pointer-events-none"}`}
           >
-            <Link to="/live-sound" className={getLinkClass("/live-sound")}>live sound</Link>
+            <Link to="/live-sound" className={getLinkClass("/live-sound")}>live<br />sound</Link>
             <Link to="/light-staging" className={getLinkClass("/light-staging")}>light staging</Link>
             <Link to="/events" className={getLinkClass("/events") + "whitespace-nowrap"}>events</Link>
             <Link to="/commercial" className={getLinkClass("/commercial") + "whitespace-nowrap"}>commercial</Link>
