@@ -19,6 +19,54 @@
   .animate-scroll {
     animation: scroll 27s linear infinite;
   }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-reverse {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin 24s linear infinite;
+  }
+
+  .animate-spin-medium {
+    animation: spin 14s linear infinite;
+  }
+
+  .animate-spin-fast {
+    animation: spin 8s linear infinite;
+  }
+
+  .animate-spin-rev-slow {
+    animation: spin-reverse 24s linear infinite;
+  }
+
+  .animate-spin-rev-medium {
+    animation: spin-reverse 14s linear infinite;
+  }
+
+  .animate-spin-rev-fast {
+    animation: spin-reverse 8s linear infinite;
+  }
+
+  /* ключевой момент: чтобы вращение происходило вокруг центра path */
+  .rotate-center {
+    transform-box: fill-box;
+    transform-origin: center;
+  }  
 }
 
 @layer base {
