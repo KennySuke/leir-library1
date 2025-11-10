@@ -7,7 +7,7 @@ export default function Cv() {
       <Header />
 
       <main className="flex-1 mt-[150px] px-4 md:px-8 lg:px-[192px] py-8 md:py-12 lg:py-12 mb-[200px]">
-        <div className="max-w-[1315px] text-[#F8F8F8] text-sm md:text-lg lg:text-2xl leading-normal space-y-6 md:space-y-8">
+        <div className="max-w-[1315px] text-text-main text-sm md:text-lg lg:text-2xl leading-normal space-y-6 md:space-y-8">
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">Образование</h2>
