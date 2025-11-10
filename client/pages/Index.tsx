@@ -7,7 +7,7 @@ export default function Index() {
       <Header />
       
       <main>
-        <div className="flex-1 relative">
+        <div className="flex-1 relative items-top ">
           {/* Mobile Text Overlay */}
           <div className="lg:hidden relative z-20">
             <div className="overflow-auto h-screen mt-[60vh] mb-[20vh] px-4 text-text-main text-lg leading-relaxed relative bg-black/70">
@@ -23,7 +23,7 @@ export default function Index() {
             </div>
 
             {/* Gradient Shadow Outside Text (вверх) */}
-            <div className="items-top top-0 left-0 w-full h-40 z-30 pointer-events-none bg-gradient-to-t from-black/70 to-transparent" />
+            <div className="top-0 left-0 w-full h-40 z-30 pointer-events-none bg-gradient-to-t from-black/70 to-transparent" />
           </div>
         </div>
 
