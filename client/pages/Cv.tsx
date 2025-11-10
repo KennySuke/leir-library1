@@ -18,7 +18,7 @@ export default function Cv() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Персональные проекты</h2>
+            <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">Персональные проекты</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>2025 DIY светомузыкальные приборы на базе советских приборов, WOODZ Outline в сотрудничестве с Романом Крыловым</li>
               <li>2025-... Серия аудио-визуальных концертов под брендом f12, Москва</li>
@@ -26,7 +26,7 @@ export default function Cv() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Групповые выставки</h2>
+            <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">Групповые выставки</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>2025 АртТех 25[I] / Краснохолмская</li>
               <li>2025 Студенческий май. Пространства утраченного / ГРАУНД Солянка</li>
@@ -37,7 +37,7 @@ export default function Cv() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">AV-перформансы</h2>
+            <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">AV-перформансы</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>2025 в рамках Signal 2025 with Digital Sisters / DEX (MAIN)</li>
               <li>2025 в рамках Пространства утраченного: 4.33 Гц / ГРАУНД Солянка</li>
