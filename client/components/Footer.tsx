@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="absolute inset-0 bg-black blur-[50px] backdrop-blur-sm" />
 
         {/* Scrolling contact links */}
-        <div className="absolute bottom-0 left-0 right-0 bg-black shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+        <div className="absolute bottom-0 left-0 right-0  shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
           <div className="overflow-hidden py-3 md:py-4">
             <div className="flex justify-start animate-scroll whitespace-nowrap lg:gap-[37px]">
               {/* Repeat contacts multiple times for continuous scroll */}
