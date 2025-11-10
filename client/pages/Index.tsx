@@ -9,7 +9,7 @@ export default function Index() {
       <main className="flex-1 flex items-center justify-center px-4 md:px-8 lg:px-[20px] py-12 md:py-16 lg:py-[180px]">
         <div className="w-full max-w-[1474px] grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 md:gap-8 lg:gap-[36px] items-center">
           {/* Left Text */}
-          <div className="text-[#F8F8F8] text-sm md:text-lg lg:text-2xl text-center lg:text-right leading-normal order-1 lg:order-1 self-start">
+          <div className="text-text-main text-sm md:text-lg lg:text-2xl text-center lg:text-right leading-normal order-1 lg:order-1 self-start">
             Leir, междисциплинарная художница, родилась в 2001 году в Новомосковске, живёт и работает в Москве.
             <br /><br />
             Художественная практика включает DIY-электронику, звуковые эксперименты, интерактивные инсталляции и AV-перформансы. В своих работах художница изучает развитие систем власти, порождающих структуры подчинения в расширенном социальном поле.
@@ -25,7 +25,7 @@ export default function Index() {
           </div>
 
           {/* Right Text */}
-          <div className="text-[#F8F8F8] text-sm md:text-lg lg:text-2xl text-center lg:text-left leading-normal self-end order-3 lg:order-3">
+          <div className="text-text-main text-sm md:text-lg lg:text-2xl text-center lg:text-left leading-normal self-end order-3 lg:order-3">
             В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.
           </div>
         </div>
