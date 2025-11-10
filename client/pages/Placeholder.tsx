@@ -16,8 +16,7 @@ export default function Placeholder({ title }: PlaceholderProps) {
             {title}
           </h1>
           <p className="text-[#F8F8F8] text-lg md:text-xl lg:text-2xl">
-            This page is coming soon. Continue prompting to fill in this
-            content.
+            This page is coming soon.
           </p>
         </div>
       </main>
