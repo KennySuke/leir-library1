@@ -31,8 +31,9 @@ app.use((req, res, next) => {
   });
 });
 
+const host = "127.0.0.1";
 // Сервер
-app.listen(port, () => {
+app.listen(port, host, () => {
   console.log(`🚀 Fusion Starter server running on port ${port}`);
   console.log(`📱 Frontend: http://localhost:${port}`);
   console.log(`🔧 API: http://localhost:${port}/api`);
