@@ -62,11 +62,30 @@
     animation: spin-reverse 8s linear infinite;
   }
 
-  /* ключевой момент: чтобы вращение происходило вокруг центра path */
+  /* --- вращение логотипа --- */
+  @keyframes spin-logo {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .rotate-center {
-    transform-box: fill-box;
     transform-origin: center;
-  }  
+  }
+
+  /* Переменная скорости анимации */
+  .animate-spin-variable {
+    animation: spin-logo var(--spin-speed, 30s) linear infinite;
+    transition: animation-duration 0.6s ease-in-out;
+  }
+
+  /* При наведении – "замедляем" вращение */
+  .group:hover .animate-spin-variable {
+    --spin-speed: 120s; /* медленное вращение вместо полной паузы */
+  }
 }
 
 @layer base {
