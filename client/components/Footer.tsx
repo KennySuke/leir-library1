@@ -9,14 +9,11 @@ export default function Footer() {
           "linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 38%, rgba(0,0,0,0)) 100%",
       }}
     >
-      <div className="relative flex items-center justify-start h-[100px] md:h-[120px] lg:h-[150px] overflow-visible">
-
+      <div className="relative overflow-hidden h-[100px] md:h-[120px] lg:h-[150px]">
         {/* Scrolling contact links with backdrop blur */}
-        <div className="flex items-center overflow-hidden w-full h-full bg-black shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
-
+        <div className="absolute bottom-0 left-0 right-0 bg-black shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
           <div className="overflow-hidden py-3 md:py-4">
-            <div className="flex justify-start animate-scroll whitespace-nowrap gap-4 lg:gap-[37px] py-3 md:py-4">
-
+            <div className="flex justify-start animate-scroll whitespace-nowrap gap-4 lg:gap-[37px]">
               {/* Repeat contacts multiple times for continuous scroll */}
               {[...Array(footerRepeatCount)].map((_, groupIndex) => (
                 <div
