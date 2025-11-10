@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['NotCourierSans', 'Courier New', 'monospace'],
+        sans: ["NotCourierSans", "Courier New", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -90,7 +90,5 @@ export default {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate")
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;

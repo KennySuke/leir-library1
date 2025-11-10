@@ -25,10 +25,19 @@ const App = () => (
           <Route path="/statement" element={<Statement />} />
           <Route path="/projects" element={<Placeholder title="Projects" />} />
           <Route path="/about" element={<Placeholder title="About" />} />
-          <Route path="/live-sound" element={<Placeholder title="Live Sound" />} />
-          <Route path="/light-staging" element={<Placeholder title="Light Staging" />} />
+          <Route
+            path="/live-sound"
+            element={<Placeholder title="Live Sound" />}
+          />
+          <Route
+            path="/light-staging"
+            element={<Placeholder title="Light Staging" />}
+          />
           <Route path="/events" element={<Placeholder title="Events" />} />
-          <Route path="/commercial" element={<Placeholder title="Commercial" />} />
+          <Route
+            path="/commercial"
+            element={<Placeholder title="Commercial" />}
+          />
           <Route path="/art" element={<Placeholder title="Art" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

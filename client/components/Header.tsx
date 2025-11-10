@@ -17,11 +17,21 @@ export default function Header() {
   const handleClick = (side, e) => {
     e.preventDefault();
     if (side === "left") {
-      if (lockedLeft) { setLockedLeft(false); setLeftOpen(false); }
-      else { setLockedLeft(true); setLeftOpen(true); }
+      if (lockedLeft) {
+        setLockedLeft(false);
+        setLeftOpen(false);
+      } else {
+        setLockedLeft(true);
+        setLeftOpen(true);
+      }
     } else {
-      if (lockedRight) { setLockedRight(false); setRightOpen(false); }
-      else { setLockedRight(true); setRightOpen(true); }
+      if (lockedRight) {
+        setLockedRight(false);
+        setRightOpen(false);
+      } else {
+        setLockedRight(true);
+        setRightOpen(true);
+      }
     }
   };
 
@@ -30,14 +40,15 @@ export default function Header() {
     return `text-white hover:opacity-70 transition-opacity ${isActive ? "font-bold" : "font-normal"}`;
   };
 
-
   return (
-    <header 
-      className="w-full fixed top-0 left-0 z-50" style= {{ background: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))" }} 
-      >
+    <header
+      className="w-full fixed top-0 left-0 z-50"
+      style={{
+        background: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
+      }}
+    >
       <div className="flex items-center justify-center max-w-[1920px] mx-auto px-2 py-0 md:px-2 lg:px-4 h-[150px]">
         <nav className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] justify-center items-center relative">
-
           {/* LEFT NAVIGATION */}
           <div
             onMouseEnter={() => handleHover("left", true)}
@@ -46,11 +57,28 @@ export default function Header() {
             transition-all duration-300 transform
             ${leftOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "opacity-0 translate-x-1/2 pointer-events-none"}`}
           >
-            <Link to="/live-sound" className={getLinkClass("/live-sound")}>live<br />sound</Link>
-            <Link to="/light-staging" className={getLinkClass("/light-staging")}>light<br />staging</Link>
-            <Link to="/events" className={getLinkClass("/events")}>events</Link>
-            <Link to="/commercial" className={getLinkClass("/commercial")}>commercial</Link>
-            <Link to="/art" className={getLinkClass("/art")}>art</Link>
+            <Link to="/live-sound" className={getLinkClass("/live-sound")}>
+              live
+              <br />
+              sound
+            </Link>
+            <Link
+              to="/light-staging"
+              className={getLinkClass("/light-staging")}
+            >
+              light
+              <br />
+              staging
+            </Link>
+            <Link to="/events" className={getLinkClass("/events")}>
+              events
+            </Link>
+            <Link to="/commercial" className={getLinkClass("/commercial")}>
+              commercial
+            </Link>
+            <Link to="/art" className={getLinkClass("/art")}>
+              art
+            </Link>
           </div>
 
           {/* CENTER LOGO */}
@@ -75,10 +103,26 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  <filter id="eclipse-blur" x="0" y="0" width="189.443" height="175.103" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <filter
+                    id="eclipse-blur"
+                    x="0"
+                    y="0"
+                    width="189.443"
+                    height="175.103"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                    <feGaussianBlur stdDeviation="9.75" result="effect1_foregroundBlur" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="9.75"
+                      result="effect1_foregroundBlur"
+                    />
                   </filter>
                 </defs>
                 <g className="group">
@@ -108,7 +152,6 @@ export default function Header() {
                   </g>
                   <circle cx="93.7695" cy="85.2192" r="37.5" fill="black" />
                 </g>
-                
               </svg>
             </div>
 
@@ -132,11 +175,16 @@ export default function Header() {
             transition-all duration-300 transform
             ${rightOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "opacity-0 -translate-x-1/2 pointer-events-none"}`}
           >
-            <Link to="/cv" className={getLinkClass("/cv")}>cv</Link>
-            <Link to="/" className={getLinkClass("/")}>bio</Link>
-            <Link to="/statement" className={getLinkClass("/statement")}>statement</Link>
+            <Link to="/cv" className={getLinkClass("/cv")}>
+              cv
+            </Link>
+            <Link to="/" className={getLinkClass("/")}>
+              bio
+            </Link>
+            <Link to="/statement" className={getLinkClass("/statement")}>
+              statement
+            </Link>
           </div>
-
         </nav>
       </div>
     </header>
