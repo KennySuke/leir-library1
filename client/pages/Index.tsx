@@ -24,7 +24,7 @@ export default function Index() {
                 В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.
             </p>
           </div>
-          <div className=" -top-40 left-0 w-full h-20vh bg-black/70 z-20" />
+          <div className=" -top-40 left-0 w-full h-40 bg-black/70 z-20" />
         </div>
 
         {/* Fixed Background Image for Mobile */}
