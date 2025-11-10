@@ -37,12 +37,12 @@
 
   .animate-spin-variable {
     animation: spin-logo var(--spin-speed, 30s) linear infinite;
-    transition: animation-duration 0.6s ease-in-out;
+    transition: animation-duration 1.6s ease-in-out;
   }
 
   .animate-spin-reverse {
     animation: spin-logo-reverse var(--spin-speed, 30s) linear infinite;
-    transition: animation-duration 0.6s ease-in-out;
+    transition: animation-duration 1.6s ease-in-out;
   }
 
   /* Скорости вращения */
