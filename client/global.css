@@ -56,7 +56,7 @@
   .group:hover .animate-spin-variable,
   .group:hover .animate-spin-reverse {
     animation-play-state: paused;
-    transition: all 0.5s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 }
 
