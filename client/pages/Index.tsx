@@ -11,7 +11,7 @@ export default function Index() {
           {/* Mobile Gradient Text Overlay */}
           <div className="lg:hidden relative z-20">
             <div
-              className="overflow-auto h-screen pt-[60vh] px-4 text-text-main text-lg leading-relaxed"
+              className="overflow-auto h-screen pt-[60vh] pb-[20vh] px-4 text-text-main text-lg leading-relaxed"
               style={{
                 background: "linear-gradient(to top, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%)",
               }}
