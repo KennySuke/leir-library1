@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["NotCourierSans"],
+        sans: ["NotCourierSans", "Courier New", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
