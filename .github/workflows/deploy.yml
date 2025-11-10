@@ -1,4 +1,4 @@
-name: Deploy frontend (Vite) to GitHub Pages
+name: Deploy Vite app to GitHub Pages
 
 on:
   push:
@@ -17,11 +17,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -29,16 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build frontend (client only)
-        run: npm run build:client
+      - name: Build project
+        run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
+      - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/spa  # именно сюда Vite кладет собранный фронтенд
+          path: dist/spa
 
   deploy:
     environment:
