@@ -39,10 +39,8 @@ const App = () => (
 );
 
 const rootElement = document.getElementById("root")!;
-if (!rootElement._reactRoot) {
-  const root = createRoot(rootElement);
-  rootElement._reactRoot = root;
-  root.render(<App />);
-} else {
-  rootElement._reactRoot.render(<App />);
+const globalAny = window as any;
+if (!globalAny.__REACT_ROOT) {
+  globalAny.__REACT_ROOT = createRoot(rootElement);
 }
+globalAny.__REACT_ROOT.render(<App />);
