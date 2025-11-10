@@ -32,7 +32,9 @@ export default function Header() {
 
 
   return (
-    <header className="w-full bg-black/80 fixed top-0 left-0 z-50">
+    <header 
+      className="w-full fixed top-0 left-0 z-50" style= {{ background: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))" }} 
+      >
       <div className="flex items-center justify-center max-w-[1920px] mx-auto px-2 py-0 md:px-2 lg:px-4 h-[150px]" style={{ boxShadow: "1px 1px 30px 15px rgba(0, 0, 0, 1)" }}>
         <nav className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] justify-center items-center relative">
 
