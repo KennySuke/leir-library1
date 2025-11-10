@@ -37,7 +37,7 @@ export default function Header() {
 
   const getLinkClass = (path) => {
     const isActive = location.pathname === path;
-    return `text-white hover:opacity-70 transition-opacity ${isActive ? "font-bold" : "font-normal"}`;
+    return `text-text-accent hover:opacity-70 transition-opacity ${isActive ? "font-bold" : "font-normal"}`;
   };
 
   return (
