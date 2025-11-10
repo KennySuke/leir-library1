@@ -104,7 +104,6 @@ export default function Header() {
                   </g>
                   <circle cx="93.7695" cy="85.2192" r="37.5" fill="black" />
                 </g>
-
                 
               </svg>
             </div>
