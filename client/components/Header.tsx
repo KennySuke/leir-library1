@@ -63,7 +63,7 @@ export default function Header() {
             </Link>
 
             {/* SVG LOGO с глобальными анимациями */}
-            <div className="relative w-[130px] h-[122px] md:w-[156px] md:h-[147px] lg:w-[192px] lg:h-[180px] flex items-center justify-center">
+            <div className="relative w-[130px] h-[122px] md:w-[156px] md:h-[147px] lg:w-[192px] lg:h-[180px] flex items-center justify-center group">
               <svg
                 className="w-full h-full "
                 viewBox="0 0 190 176"
