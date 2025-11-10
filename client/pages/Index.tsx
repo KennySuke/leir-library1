@@ -10,10 +10,7 @@ export default function Index() {
         <div className="flex-1 relative">
           {/* Mobile Text Overlay */}
           <div className="lg:hidden relative z-20">
-            <div className="overflow-auto h-screen mt-[60vh] px-4 text-text-main text-lg leading-relaxed relative bg-black/70">
-              {/* Плавная тень сверху */}
-              <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-t from-black/70 to-transparent pointer-events-none" />
-
+            <div className="overflow-auto h-screen mt-[60vh] mb-[20vh] px-4 text-text-main text-lg leading-relaxed relative bg-black/70">
               <p>
                 Leir, междисциплинарная художница, родилась в 2001 году в Новомосковске, живёт и работает в Москве.
               </p>
@@ -24,6 +21,9 @@ export default function Index() {
                 В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.
               </p>
             </div>
+
+            {/* Gradient Shadow Outside Text (вверх) */}
+            <div className="absolute top-0 left-0 w-full h-40 z-30 pointer-events-none bg-gradient-to-t from-black/70 to-transparent" />
           </div>
         </div>
 
