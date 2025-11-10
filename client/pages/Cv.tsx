@@ -10,7 +10,7 @@ export default function Cv() {
         <div className="max-w-[1315px] text-[#F8F8F8] text-sm md:text-lg lg:text-2xl leading-normal space-y-6 md:space-y-8">
 
           <section className="space-y-4">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Образование</h2>
+            <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">Образование</h2>
             <ul className="list-disc list-inside space-y-1">
               <li>Технологическое искусство "ArtTECH", NUST MISIS, 2024-н.в.</li>
               <li>Информационные системы и технологии, NUST MISIS, 2020-2024</li>
