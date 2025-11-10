@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Placeholder from "./pages/Placeholder";
 import Statement from "./pages/Statement";
+import Cv from "./pages/Cv";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/cv" element={<Placeholder title="CV" />} />
+          <Route path="/cv" element={<Cv />} />
           <Route path="/statement" element={<Statement />} />
           <Route path="/projects" element={<Placeholder title="Projects" />} />
           <Route path="/about" element={<Placeholder title="About" />} />
