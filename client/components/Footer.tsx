@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="w-full fixed bottom-0 left-0 z-50">
       <div className="relative overflow-hidden h-[100px] md:h-[120px] lg:h-[150px]">
-        {/* Blur effect */}
-        <div className="absolute inset-0 bg-black blur-[50px] backdrop-blur-sm" />
+        {/* Blur effect background */}
+        <div className="absolute left-0 right-0 h-[122px] bg-black/80 blur-[50px] backdrop-blur-[1px]" style={{ top: '21px' }} />
 
-        {/* Scrolling contact links */}
-        <div className="absolute bottom-0 left-0 right-0  shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
+        {/* Scrolling contact links with backdrop blur */}
+        <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]">
           <div className="overflow-hidden py-3 md:py-4">
             <div className="flex justify-start animate-scroll whitespace-nowrap lg:gap-[37px]">
               {/* Repeat contacts multiple times for continuous scroll */}
