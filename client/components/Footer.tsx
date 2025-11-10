@@ -22,7 +22,7 @@ export default function Footer() {
                 >
                   {footerLinks.map((link, index) => {
                     const key = `${groupIndex}-${index}`;
-                    const classes = `text-white text-sm md:text-lg lg:text-2xl ${link.bold ? "font-bold" : "font-normal hover:opacity-70 transition-opacity"}`;
+                    const classes = `text-text-main text-sm md:text-lg lg:text-2xl ${link.bold ? "font-bold" : "font-normal hover:opacity-70 transition-opacity"}`;
                     if (!link.href) {
                       return (
                         <span key={key} className={classes} aria-disabled>
