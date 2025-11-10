@@ -55,7 +55,7 @@
   /* Наведение замедляет вращение */
   .group:hover .animate-spin-variable,
   .group:hover .animate-spin-reverse {
-    --spin-speed: 120s;
+    --spin-speed: 2s;
   }
 }
 
