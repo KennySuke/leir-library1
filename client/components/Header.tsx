@@ -200,7 +200,7 @@ export default function Header() {
 
           {/* MOBILE RIGHT SLIDEBAR */}
           <div
-            className={`lg:hidden fixed top-0 right-0 h-full w-[40%] bg-black z-40 flex flex-col justify-center items-end p-6 gap-6 text-lg transform transition-transform duration-300 ${rightOpen ? "translate-x-0" : "translate-x-full"
+            className={`lg:hidden fixed top-0 right-0 h-full w-[40%] bg-black z-40 flex flex-col justify-center items-end p-3 gap-6 text-lg transform transition-transform duration-300 ${rightOpen ? "translate-x-0" : "translate-x-full"
               }`}
           >
             <Link to="/cv" className={getLinkClass("/cv")}>cv</Link>
