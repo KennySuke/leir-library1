@@ -24,7 +24,7 @@ export default function Footer() {
                       key={`${groupIndex}-${index}`}
                       href="#"
                       className={`text-white text-sm md:text-lg lg:text-2xl  ${
-                        contact.bold ? "font-bold hover:opacity-70 transition-opacity" : "font-normal"
+                        contact.bold ? "font-bold" : "font-normal hover:opacity-70 transition-opacity"
                       }`}
                     >
                       {contact.name}
