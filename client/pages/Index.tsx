@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { footerLinks, footerRepeatCount } from "@/config/siteConfig";
 
 export default function Index() {
   return (
@@ -63,34 +64,38 @@ export default function Index() {
                 В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.
               </div>
 
-              {/* Нижняя строка — три столбца */}
+              {/* Нижняя строка — три ссылки по колонкам */}
               <div className="grid grid-cols-3 items-start">
-                <a
-                  href="https://example.com/left"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-main text-sm md:text-lg lg:text-2xl underline hover:no-underline hover:text-accent transition text-left"
-                >
-                  mail
-                </a>
+                {footerLinks.slice(0, 3).map((link, index) => {
+                  if (!link) return null;
 
-                <a
-                  href="https://example.com/center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-main text-sm md:text-lg lg:text-2xl underline hover:no-underline hover:text-accent transition text-center"
-                >
-                  telegram
-                </a>
+                  const alignment =
+                    index === 0 ? "justify-self-start" :
+                      index === 1 ? "justify-self-center" :
+                        "justify-self-end";
 
-                <a
-                  href="https://example.com/right"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-text-main underline text-sm md:text-lg lg:text-2xl hover:no-underline hover:text-accent transition text-right"
-                >
-                  tg channel
-                </a>
+                  const classes = `text-text-main text-sm md:text-lg lg:text-2xl underline hover:no-underline hover:text-accent transition ${alignment}`;
+
+                  if (!link.href) {
+                    return (
+                      <span key={index} className={classes} aria-disabled>
+                        {link.label}
+                      </span>
+                    );
+                  }
+
+                  return (
+                    <a
+                      key={index}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={classes}
+                    >
+                      {link.label}
+                    </a>
+                  );
+                })}
               </div>
             </div>
 
