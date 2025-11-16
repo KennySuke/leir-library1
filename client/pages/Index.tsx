@@ -57,7 +57,7 @@ export default function Index() {
             </div>
 
             {/* Right Text */}
-            <div className="text-text-main text-sm md:text-lg lg:text-2xl text-center lg:text-left leading-normal self-end order-3 lg:order-3 text-justify">
+            <div className="text-text-main text-sm md:text-lg lg:text-2xl text-center leading-normal self-end order-3 lg:order-3 text-justify">
               В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.
             </div>
           </div>
