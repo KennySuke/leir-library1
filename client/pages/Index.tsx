@@ -69,7 +69,7 @@ export default function Index() {
                   href="https://example.com/left"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-main underline hover:no-underline hover:text-accent transition text-left"
+                  className="text-text-main text-sm md:text-lg lg:text-2xl underline hover:no-underline hover:text-accent transition text-left"
                 >
                   левая ссылка
                 </a>
@@ -78,7 +78,7 @@ export default function Index() {
                   href="https://example.com/center"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:no-underline hover:text-accent transition text-center"
+                  className="text-text-main text-sm md:text-lg lg:text-2xl underline hover:no-underline hover:text-accent transition text-center"
                 >
                   центральная ссылка
                 </a>
@@ -87,7 +87,7 @@ export default function Index() {
                   href="https://example.com/right"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:no-underline hover:text-accent transition text-right"
+                  className="text-text-main underline text-sm md:text-lg lg:text-2xl hover:no-underline hover:text-accent transition text-right"
                 >
                   правая ссылка
                 </a>
