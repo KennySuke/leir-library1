@@ -40,7 +40,7 @@ const App = () => (
             path="/commercial"
             element={<Placeholder title="Commercial" />}
           />
-          <Route path="/art" element={<Placeholder title="Art" />} />
+          <Route path="/art" element={<Art />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
