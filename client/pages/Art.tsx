@@ -23,6 +23,7 @@ export default function Art() {
               className="
                 relative
                 w-full
+                md:w-[236px]
                 aspect-[118/383]
                 overflow-hidden
               "
