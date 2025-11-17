@@ -24,7 +24,6 @@ export default function Art() {
       relative
       h-[682px]
       aspect-[118/383]
-      items-start
       overflow-hidden
       transition-all duration-500
       hover:aspect-square    /* новое соотношение 1:1 */
@@ -35,12 +34,12 @@ export default function Art() {
                 src={project.image}
                 alt={project.title}
                 className="
-        w-full h-full object-cover items-start
+        w-full h-full object-cover
         transition-all duration-500
       "
                 style={{
                   filter: `grayscale(1) brightness(${project.grayscaleExposure})`,
-                  objectPosition: `${project.cropX} center`,
+                  objectPosition: `${project.cropX} top`,
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLImageElement).style.filter =
