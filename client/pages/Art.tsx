@@ -24,6 +24,7 @@ export default function Art() {
       relative
       h-[682px]
       aspect-[118/383]
+      items-start
       overflow-hidden
       transition-all duration-500
       hover:aspect-square    /* новое соотношение 1:1 */
