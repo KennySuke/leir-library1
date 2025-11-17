@@ -22,7 +22,7 @@ export default function Art() {
               href={project.href}
               className="
       relative
-      h-30
+      h-20
       aspect-[118/383]
       overflow-hidden
       transition-all duration-500
