@@ -120,7 +120,7 @@ export default function Index() {
               borderColor: isCopied ? 'rgba(134, 134, 134, 0.41)' : 'rgba(134, 134, 134, 0.41)',
               color: isCopied ? '#000' : '#BFBFBF',
               fontFamily: 'NotCourierSans, -apple-system, Roboto, Helvetica, sans-serif',
-              fontSize: '24px',
+              fontSize: '20px',
               fontWeight: 400,
               lineHeight: 'normal',
               background: isCopied ? '#E8E8E8' : 'transparent',
