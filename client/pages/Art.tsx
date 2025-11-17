@@ -24,7 +24,7 @@ export default function Art() {
                 relative
                 w-full
                 md:w-[236px]
-                aspect-[118/320]
+                aspect-[118/383]
                 overflow-hidden
               "
             >
