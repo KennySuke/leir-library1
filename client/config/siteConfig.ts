@@ -33,7 +33,7 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-1",
     image: "govoryat_doma.png",
     grayscaleExposure: 0.8, 
-    shiftXPercent: 0,       
+    cropX: "20%",       
   },
   {
     id: "project-2",
@@ -41,7 +41,7 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-2",
     image: "vnedreniye_vozmozhno.png",
     grayscaleExposure: 1.0,  
-    shiftXPercent: 0,       
+    cropX: "20%",     
   },
   {
     id: "project-3",
@@ -49,6 +49,6 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-3",
     image: "zhivotinka-1.png",
     grayscaleExposure: 1.0,   
-    shiftXPercent: 0,        
+    cropX: "20%",      
   },
 ];
