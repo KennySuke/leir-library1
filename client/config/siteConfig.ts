@@ -23,7 +23,8 @@ export interface ProjectConfig {
   href: string;              // страница проекта
   image: string;             // путь к изображению
   grayscaleExposure: number; // 0 → нормальное, 1 → яркое, 2 → пересвечено
-  shiftXPercent: number;     // смещение внутри плашки (-100..100)
+  cropX: string;     // смещение внутри плашки (x%)
+  cropY: string;     // смещение внутри плашки (x%)
 }
 
 export const projectList: ProjectConfig[] = [
@@ -33,7 +34,8 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-1",
     image: "govoryat_doma.png",
     grayscaleExposure: 0.8, 
-    cropX: "79%",       
+    cropX: "79%",   
+    cropY: "center",    
   },
   {
     id: "project-2",
@@ -41,7 +43,8 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-2",
     image: "vnedreniye_vozmozhno.png",
     grayscaleExposure: 1.0,  
-    cropX: "58%",     
+    cropX: "58%",    
+    cropY: "center",  
   },
   {
     id: "project-3",
@@ -49,6 +52,7 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-3",
     image: "zhivotinka-1.png",
     grayscaleExposure: 1.0,   
-    cropX: "20%",      
+    cropX: "20%",    
+    cropY: "20%",   
   },
 ];
