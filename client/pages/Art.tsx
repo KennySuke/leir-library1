@@ -60,7 +60,7 @@ export default function Art() {
                 w-full
                 md:w-[236px]
 
-                aspect-[118/383]      /* ← соотношение сторон */
+                aspect-[118/350]      /* ← соотношение сторон */
                 overflow-hidden
                 transition-opacity
                 hover:opacity-80
