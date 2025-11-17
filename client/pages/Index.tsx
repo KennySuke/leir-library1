@@ -1,8 +1,33 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { footerLinks, footerRepeatCount } from "@/config/siteConfig";
 
 export default function Index() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopyBio = async () => {
+    const leftText = "Leir, междисциплинарная художница, родилась в 2001 году в Новомосковске, живёт и работает в Москве.\n\nХудожественная практика включает DIY-электронику, звуковые эксперименты, интерактивные инсталляции и AV-перформансы. В своих работах художница изучает развитие систем власти, порождающих структуры подчинения в расширенном социальном поле.";
+
+    const rightText = "В настоящее время исследует возможности создания непрерывной системы из световой, графической и аудиальной составляющих для формирования зрительского опыта в перформативном пространстве.";
+
+    const linksText = footerLinks
+      .filter(link => link.href)
+      .slice(0, 3)
+      .map(link => `${link.label}: ${link.href}`)
+      .join("\n");
+
+    const fullText = `${leftText}\n\n${rightText}\n\n${linksText}`;
+
+    try {
+      await navigator.clipboard.writeText(fullText);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-black flex flex-col">
       <Header />
