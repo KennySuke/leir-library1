@@ -41,7 +41,7 @@ export const projectList: ProjectConfig[] = [
     href: "/projects/project-2",
     image: "vnedreniye_vozmozhno.png",
     grayscaleExposure: 1.0,  
-    cropX: "60%",     
+    cropX: "58%",     
   },
   {
     id: "project-3",
