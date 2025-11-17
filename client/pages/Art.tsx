@@ -26,7 +26,7 @@ export default function Art() {
       md:w-[210px]
       aspect-[118/383]
       overflow-hidden
-      transition-[width] duration-500
+      transition-all duration-500
       hover:w-[682px]       /* ширина плашки увеличивается вправо */
       hover:aspect-square    /* новое соотношение 1:1 */
     "
