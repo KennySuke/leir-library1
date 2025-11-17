@@ -39,7 +39,7 @@ export default function Art() {
       "
                 style={{
                   filter: `grayscale(1) brightness(${project.grayscaleExposure})`,
-                  objectPosition: `${project.cropX} 20`,
+                  objectPosition: `${project.cropX} 20%`,
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLImageElement).style.filter =
