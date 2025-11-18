@@ -169,7 +169,7 @@ export default function ProjectDetail2() {
             </div>
 
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/ccb4813f87beadd6c9bbf54325d1dc7305717016?width=2132"
+              src="photo_2025-11-18_21-48-12.jpg"
               alt="Circuit boards"
               className="w-full lg:w-[65%] h-auto object-cover"
             />
