@@ -109,7 +109,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
               alt="Detail view 2"
-              className="w-full lg:w-[45%] h-auto object-cover lg:hidden"
+              className="w-full lg:w-[45%] h-auto object-cover"
             />
           </div>
 
