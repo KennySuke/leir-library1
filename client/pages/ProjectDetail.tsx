@@ -90,14 +90,14 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Two images with text */}
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 lg:gap-2 w-full max-w-7xl">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 lg:gap-2 w-full">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/40457bcb30a2f0bf16c5a57bd47b2816420a278f?width=1172"
               alt="Detail view 1"
-              className="w-full lg:w-[45%] h-auto object-cover"
+              className="w-full w-[30%] h-auto object-cover"
             />
             
-            <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+            <div className="text-base w-[30%]  md:text-lg lg:text-xl text-justify leading-relaxed">
               <p className="mb-4">
                 Инсталляция состоит из 3 телевизоров, с трансляцией на них искаженных изображений с аналоговых камер видеонаблюдения, которые размещены в ближайшем пространстве в галерее. Камеры подвержены circuit-bending.
               </p>
@@ -109,7 +109,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
               alt="Detail view 2"
-              className="w-full lg:w-[45%] h-auto object-cover"
+              className="w-full w-[30%] h-auto object-cover"
             />
           </div>
 
