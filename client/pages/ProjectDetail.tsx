@@ -75,16 +75,18 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Vimeo player */}
-          <div className="h-screen aspect-video">
-            <iframe
-              src="https://player.vimeo.com/video/1138207770"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
+          <div className="h-screen">
+            <div className="h-[80%] aspect-video">
+              <iframe
+                src="https://player.vimeo.com/video/1138207770"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
           </div>
 
           {/* Two images with text */}
