@@ -15,7 +15,6 @@ export default function Art() {
         "
       >
         <div className="w-full flex flex-col md:flex-row items-center pt-20 md:items-start justify-start gap-5 md:gap-6 lg:gap-[20px]">
-
           {projectList.map((project) => (
             <a
               key={project.id}
@@ -58,13 +57,13 @@ export default function Art() {
                   src="/stroke2.png"
                   alt="stroke overlay"
                   className="absolute top-0 object-cover left-0 pointer-events-none transition-all duration-500 h-full"
-                  style={{ height: '100%', objectPosition: 'left top'}}
+                  style={{ height: "100%", objectPosition: "left top" }}
                 />
                 <img
                   src="/stroke2.png"
                   alt="stroke overlay"
                   className="absolute top-0 object-cover right-0 pointer-events-none transition-all duration-500 h-full"
-                  style={{ height: '100%', objectPosition: 'right top' }}
+                  style={{ height: "100%", objectPosition: "right top" }}
                 />
 
                 {/* Название, выезжающее слева */}
@@ -85,8 +84,6 @@ export default function Art() {
               </div>
             </a>
           ))}
-
-
         </div>
       </main>
 
