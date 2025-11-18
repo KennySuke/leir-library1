@@ -120,7 +120,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/40457bcb30a2f0bf16c5a57bd47b2816420a278f?width=1172"
               alt="Detail view 1"
-              className="w-full w-[30%] h-auto object-cover"
+              className="w-[30%] h-auto object-cover"
             />
 
             <div className="text-base w-[30%]  md:text-lg lg:text-xl text-justify leading-relaxed">
@@ -143,7 +143,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
               alt="Detail view 2"
-              className="w-full w-[30%] h-auto object-cover"
+              className="w-[30%] h-auto object-cover"
             />
           </div>
 
