@@ -71,7 +71,7 @@ export default function Art() {
                 <div
                   className="
                     absolute bottom-0 left-0
-                    bg-black px-6 py-2 md:px-9 md:py-4
+                    bg-black px-6 py-8 md:px-9 md:py-4
                     transition-transform duration-500 ease-out
                     -translate-x-full
                     group-hover:translate-x-0
