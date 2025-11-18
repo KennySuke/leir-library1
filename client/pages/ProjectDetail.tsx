@@ -40,7 +40,7 @@ export default function ProjectDetail2() {
                 </div>
 
                 {/* Description */}
-                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed max-w-[95%]">
+                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed max-w-[90%]">
                   <p className="mb-4">
                     Работа является site-specific для выставки глитч-арта в галерее Краснохолмская. Глитч - ошибка в системе, которая создана человеком. Рассматривая институцию галереи, как систему с присущими ей правилами, художники размышляют о социальных «сбоях», как выход за рамки данной системы.
                   </p>
@@ -75,7 +75,7 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Full width image */}
-          <div className="w-full">
+          <div className="h-screen">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/2c30d67644870744143388c07ad2d1da47653427?width=3840"
               alt="Installation full view"
