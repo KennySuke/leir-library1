@@ -12,7 +12,7 @@ export default function ProjectDetail2() {
           
           {/* Hero Section */}
           <div className="flex flex-col items-center gap-0 w-full">
-            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12 w-full lg:pl-20">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12 w-full lg:pl-[150px]">
               
               {/* Left content */}
               <div className="flex flex-col gap-8 w-full lg:w-[55%]">
