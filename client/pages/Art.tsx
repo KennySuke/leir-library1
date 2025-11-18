@@ -55,14 +55,7 @@ export default function Art() {
               <img
                 src="/stroke2.png"
                 alt="stroke overlay"
-                className="
-    absolute
-    top-0
-    left-0
-    pointer-events-none
-    transition-all duration-500
-    w-auto       /* высота авто, сохраняем соотношение сторон */
-  "
+                className="absolute top-0 left-0 pointer-events-none transition-all duration-500 w-auto"
                 style={{
                   height: '100%',      // ширина контейнера
                   objectFit: 'contain', // вписываем изображение без искажения
