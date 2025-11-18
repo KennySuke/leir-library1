@@ -141,7 +141,7 @@ export default function ProjectDetail2() {
             </div>
 
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
+              src="/Последовательность 01_3.gif"
               alt="Detail view 2"
               className="w-[30%] h-auto object-cover"
             />
