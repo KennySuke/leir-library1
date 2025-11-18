@@ -75,11 +75,11 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Full width image */}
-          <div className="h-screen">
+          <div className="items-center w-full">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/2c30d67644870744143388c07ad2d1da47653427?width=3840"
               alt="Installation full view"
-              className="w-full h-auto object-cover"
+              className="w-auto h-screen object-cover"
             />
           </div>
 
