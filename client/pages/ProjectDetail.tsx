@@ -114,8 +114,8 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Text with image */}
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 w-full lg:pl-[150px]">
-            <div className="w-full lg:w-[45%] text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12 w-full lg:pl-[150px]">
+            <div className="w-full lg:w-[30%] text-base md:text-lg lg:text-xl text-justify leading-relaxed">
               <p className="mb-4">
                 В процессе создания работы производилось замыкание различных контактов на матрицах камер. Так как процесс поиска глитча подразумевает эксперимент, не предусмотренный производителем устройства, не все замыкания могут быть безопасны для него. Соответственно, в процессе исследования возможностей матрицы несколько плат претерпели неисправимые изменения - <span className="font-bold">сгорели</span>, если кратко.
               </p>
@@ -127,7 +127,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/ccb4813f87beadd6c9bbf54325d1dc7305717016?width=2132"
               alt="Circuit boards"
-              className="w-full lg:w-[55%] h-auto object-cover"
+              className="w-full lg:w-[65%] h-auto object-cover"
             />
           </div>
 
