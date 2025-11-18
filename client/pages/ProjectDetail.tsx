@@ -40,7 +40,7 @@ export default function ProjectDetail2() {
                 </div>
 
                 {/* Description */}
-                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed">
+                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed max-w-[95%]">
                   <p className="mb-4">
                     Работа является site-specific для выставки глитч-арта в галерее Краснохолмская. Глитч - ошибка в системе, которая создана человеком. Рассматривая институцию галереи, как систему с присущими ей правилами, художники размышляют о социальных «сбоях», как выход за рамки данной системы.
                   </p>
