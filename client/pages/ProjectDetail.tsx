@@ -8,7 +8,7 @@ export default function ProjectDetail2() {
 
       <main className="w-full">
         {/* Main content container */}
-        <div className="flex flex-col items-center gap-20 md:gap-32 pt-32 pb-20">
+        <div className="flex flex-col items-center gap-20 md:gap-32 pt-42 pb-20">
           
           {/* Hero Section */}
           <div className="flex flex-col items-center gap-0 w-full">
