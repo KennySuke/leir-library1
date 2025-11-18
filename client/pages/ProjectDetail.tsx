@@ -113,14 +113,6 @@ export default function ProjectDetail2() {
             />
           </div>
 
-          <div className="hidden lg:flex justify-center items-center w-full max-w-7xl">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
-              alt="Detail view 2"
-              className="w-[45%] h-auto object-cover"
-            />
-          </div>
-
           {/* Text with image */}
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 w-full max-w-7xl lg:pl-8">
             <div className="w-full lg:w-[45%] text-base md:text-lg lg:text-xl text-justify leading-relaxed">
