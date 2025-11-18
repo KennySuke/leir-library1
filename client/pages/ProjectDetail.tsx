@@ -74,12 +74,16 @@ export default function ProjectDetail2() {
             </div>
           </div>
 
-          {/* Full width image */}
-          <div className="w-full">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2c30d67644870744143388c07ad2d1da47653427?width=3840"
-              alt="Installation full view"
-              className="w-auto h-screen object-cover"
+          {/* Vimeo player */}
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://player.vimeo.com/video/1138207770"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
             />
           </div>
 
@@ -119,7 +123,7 @@ export default function ProjectDetail2() {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 w-full max-w-7xl lg:pl-8">
             <div className="w-full lg:w-[45%] text-base md:text-lg lg:text-xl text-justify leading-relaxed">
               <p className="mb-4">
-                В процессе создания работы производилось замыкание различных контактов на матрицах камер. Так как процесс поиска глитча подразумевает эксперимент, не предусмотренный производителем устройства, не все замыкания могут быть безопасны для него. Соответственно, в процессе исследования возможностей матрицы несколько плат претерпели неисправимые изменения - <span className="font-bold">сгорели</span>, если кратко.
+                В процессе создания р��боты производилось замыкание различных контактов на матрицах камер. Так как процесс поиска глитча подразумевает эксперимент, не предусмотренный производителем устройства, не все замыкания могут быть безопасны для него. Соответственно, в процессе исследования возможностей матрицы несколько плат претерпели неисправимые изменения - <span className="font-bold">сгорели</span>, если кратко.
               </p>
               <p>
                 Для управления найденными визуальными артефактами была разработана специальная схема на базе Arduino, регулирующая подачу навряжения на контакты матриц. (В процессе перепайки камер было выяснено, что необязательно замыкать контакты матриц, достаточно подать внешнее напряжение на них.)
