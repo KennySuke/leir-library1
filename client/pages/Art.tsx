@@ -61,10 +61,10 @@ export default function Art() {
     left-0
     pointer-events-none
     transition-all duration-500
-    h-auto       /* высота авто, сохраняем соотношение сторон */
+    w-auto       /* высота авто, сохраняем соотношение сторон */
   "
                 style={{
-                  width: '100%',      // ширина контейнера
+                  height: '100%',      // ширина контейнера
                   objectFit: 'contain', // вписываем изображение без искажения
                   objectPosition: 'left top', // левый верхний угол
                 }}
