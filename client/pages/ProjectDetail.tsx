@@ -27,7 +27,7 @@ export default function ProjectDetail2() {
                 </div>
 
                 {/* Info box */}
-                <div className="border-2 border-white/70 p-4 md:p-6">
+                <div className="border-2 border-white/70 p-4 max-w-[503px] md:p-6">
                   <div className="text-sm md:text-base lg:text-xl max-w-[503px]">
                     <span className="font-bold text-lg md:text-xl">Leir, федя лакихил</span>
                     <br />
