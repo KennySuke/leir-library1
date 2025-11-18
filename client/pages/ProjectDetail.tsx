@@ -94,7 +94,7 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/40457bcb30a2f0bf16c5a57bd47b2816420a278f?width=1172"
               alt="Detail view 1"
-              className="w-full lg:w-[30%] h-auto object-cover"
+              className="w-full w-[30%] h-auto object-cover"
             />
             
             <div className="text-base w-[30%]  md:text-lg lg:text-xl text-justify leading-relaxed">
@@ -109,12 +109,12 @@ export default function ProjectDetail2() {
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a45a28dff24add4acd9dada917baeb2f00712b96?width=1174"
               alt="Detail view 2"
-              className="w-full lg:w-[30%] h-auto object-cover"
+              className="w-full w-[30%] h-auto object-cover"
             />
           </div>
 
           {/* Text with image */}
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 w-full max-w-7xl lg:pl-8">
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12 w-full lg:pl-8">
             <div className="w-full lg:w-[45%] text-base md:text-lg lg:text-xl text-justify leading-relaxed">
               <p className="mb-4">
                 В процессе создания работы производилось замыкание различных контактов на матрицах камер. Так как процесс поиска глитча подразумевает эксперимент, не предусмотренный производителем устройства, не все замыкания могут быть безопасны для него. Соответственно, в процессе исследования возможностей матрицы несколько плат претерпели неисправимые изменения - <span className="font-bold">сгорели</span>, если кратко.
