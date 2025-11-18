@@ -12,6 +12,7 @@ import Placeholder from "./pages/Placeholder";
 import Statement from "./pages/Statement";
 import Cv from "./pages/Cv";
 import Art from "./pages/Art";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,9 @@ const App = () => (
             element={<Placeholder title="Commercial" />}
           />
           <Route path="/art" element={<Art />} />
+          <Route path="/projects/project-1" element={<ProjectDetail />} />
+          <Route path="/projects/project-2" element={<ProjectDetail />} />
+          <Route path="/projects/project-3" element={<ProjectDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
