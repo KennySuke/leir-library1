@@ -30,7 +30,7 @@ export interface ProjectConfig {
 export const projectList: ProjectConfig[] = [
   {
     id: "project-1",
-    title: "Project 1",
+    title: "говорят дома",
     href: "/projects/project-1",
     image: "govoryat_doma.png",
     grayscaleExposure: 0.8, 
@@ -39,7 +39,7 @@ export const projectList: ProjectConfig[] = [
   },
   {
     id: "project-2",
-    title: "Project 2",
+    title: "внедрение возможно",
     href: "/projects/project-2",
     image: "vnedreniye_vozmozhno.png",
     grayscaleExposure: 1.0,  
@@ -48,7 +48,7 @@ export const projectList: ProjectConfig[] = [
   },
   {
     id: "project-3",
-    title: "Project 3",
+    title: "животинка",
     href: "/projects/project-3",
     image: "zhivotinka-1.png",
     grayscaleExposure: 1.0,   
