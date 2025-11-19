@@ -45,7 +45,7 @@ export default function ProjectDetail2() {
                 </div>
 
                 {/* Description */}
-                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed max-w-[90%]">
+                <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed lg:max-w-[90%]">
                   <p className="mb-4">
                     Работа является site-specific для выставки глитч-арта в
                     галерее Краснохолмская. Глитч - ошибка в системе, которая
