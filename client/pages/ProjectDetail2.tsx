@@ -116,7 +116,7 @@ export default function ProjectDetail2() {
           </div>
 
           {/* Two images with text */}
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 lg:gap-2 w-full">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-5 lg:gap-2 w-full">
             <img
               src="/Последовательность 01.gif"
               alt="Detail view 1"
