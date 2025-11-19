@@ -61,7 +61,7 @@ export default function ProjectDetail2() {
                     {/* Top row: Title and button */}
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-0">
                       {/* Left: Title and type */}
-                      <div className="flex-1">
+                      <div className="flex-1 lg:max-w-[58%]">
                         <div className="text-lg md:text-xl">
                           <span className="font-bold">Leir, федя лакихил</span>
                           <br />
