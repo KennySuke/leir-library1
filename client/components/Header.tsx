@@ -73,6 +73,12 @@ export default function Header() {
             transition-all duration-300 transform
             ${leftOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "opacity-0 translate-x-1/2 pointer-events-none"}`}
             >
+              <Link to="/art" className={getLinkClass("/art")}>
+                art
+              </Link>
+              <Link to="/events" className={getLinkClass("/events")}>
+                events
+              </Link>
               <Link to="/live-sound" className={getLinkClass("/live-sound")}>
                 live
                 <br />
@@ -86,15 +92,11 @@ export default function Header() {
                 <br />
                 staging
               </Link>
-              <Link to="/events" className={getLinkClass("/events")}>
-                events
-              </Link>
+              
               <Link to="/commercial" className={getLinkClass("/commercial")}>
                 commercial
               </Link>
-              <Link to="/art" className={getLinkClass("/art")}>
-                art
-              </Link>
+              
             </div>
 
             {/* MOBILE LEFT SLIDEBAR */}
