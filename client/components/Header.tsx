@@ -64,7 +64,7 @@ export default function Header() {
         }}
       >
         <div className="flex items-center justify-start max-w-[1920px] mx-auto px-2 py-0 md:px-2 lg:px-4 h-[150px]">
-          <nav className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] justify-center items-center relative">
+          <nav className="w-full grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] justify-start items-center relative">
             {/* LEFT NAVIGATION */}
             <div
               onMouseEnter={() => handleHover("left", true)}
