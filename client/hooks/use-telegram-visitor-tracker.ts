@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { isTelegramConfigured } from "./shared/telegram-config";
 
 interface VisitorData {
   timestamp: string;
@@ -87,10 +86,6 @@ export function useTelegramVisitorTracker() {
   const location = useLocation();
 
   useEffect(() => {
-    if (!isTelegramConfigured()) {
-      return;
-    }
-
     const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
     const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
