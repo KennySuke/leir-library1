@@ -12,7 +12,7 @@ export default function Cv() {
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-2xl font-bold">Образование</h2>
             <ul className="list-disc list-inside space-y-1">
-              <li>Технологическое искусство "ArtTECH", NUST MISIS, 2024-н.в.</li>
+              <li>Технологическое искусство «ArtTECH», NUST MISIS, 2024-н.в.</li>
               <li>Информационные системы и технологии, NUST MISIS, 2020-2024</li>
             </ul>
           </section>
