@@ -27,6 +27,23 @@ export default function Art() {
       if (!container) return;
 
       const cards = container.querySelectorAll('[data-project-card]');
+
+      // --- 1. Если долистали до верхнего края
+      if (window.scrollY <= 5) {
+        setActiveIndex(0);
+        return;
+      }
+
+      // --- 2. Если долистали до нижнего края
+      const scrollBottom = window.innerHeight + window.scrollY;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (documentHeight - scrollBottom <= 5) {
+        setActiveIndex(cards.length - 1);
+        return;
+      }
+
+      // --- 3. В остальных случаях — логика "по центру"
       const viewportCenter = window.innerHeight / 2;
 
       let closestIndex = 0;
@@ -45,6 +62,7 @@ export default function Art() {
 
       setActiveIndex(closestIndex);
     };
+
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
