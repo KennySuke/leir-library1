@@ -61,7 +61,7 @@ export default function Art() {
         className="
           flex-1
           flex items-center justify-center
-          px-2 md:px-8 lg:px-16
+          px-0 md:px-8 lg:px-16
           pt-40 md:pt-20
           pb-40 lg:pb-10
         "
