@@ -175,13 +175,13 @@ export default function Art() {
                   <img
                     src="/stroke2.png"
                     alt="stroke overlay"
-                    className="absolute top-0 object-cover left-0 pointer-events-none transition-all duration-500 h-full w-1/2"
+                    className="absolute top-0 object-cover left-0 pointer-events-none transition-all duration-500 w-full"
                     style={{ objectPosition: "left top" }}
                   />
                   <img
                     src="/stroke2.png"
                     alt="stroke overlay"
-                    className="absolute top-0 object-cover right-0 pointer-events-none transition-all duration-500 h-full w-1/2"
+                    className="absolute top-0 object-cover right-0 pointer-events-none transition-all duration-500 w-full"
                     style={{ objectPosition: "right top" }}
                   />
 
