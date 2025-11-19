@@ -63,7 +63,7 @@ export default function Art() {
           flex items-center justify-center
           px-2 md:px-8 lg:px-16
           pt-40 md:pt-20
-          pb-20 lg:pb-10
+          pb-40 lg:pb-10
         "
       >
         {/* Desktop: horizontal layout */}
