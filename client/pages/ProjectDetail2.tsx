@@ -1,7 +1,38 @@
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ProjectDetail2() {
+  const [showMaterials, setShowMaterials] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) return;
+
+    const handleScroll = () => {
+      if (showMaterials) {
+        setShowMaterials(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMobile, showMaterials]);
+
+  const materialsText =
+    "Аналоговые камеры видеонаблюдения, подверженные circuit-bending, видеомониторы, DIY управляющая плата (15х10х5 см), объект (15х15х15 см, 3D-печать, гипс), фоторезистор";
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
@@ -24,23 +55,93 @@ export default function ProjectDetail2() {
                   </div>
                 </div>
 
-                {/* Info box */}
-                <div className="border-2 border-white/70 p-4 max-w-[70%] lg:max-w-[58%] md:p-6">
-                  <div className="text-sm md:text-base lg:text-xl ">
-                    <span className="font-bold text-lg md:text-xl">
-                      Leir, федя лакихил
-                    </span>
-                    <br />
-                    <span className="text-lg md:text-xl">
-                      Интерактивная инсталляция
-                    </span>
-                    <br />
-                    <span className="text-sm md:text-base">
-                      Аналоговые камеры видеонаблюдения, подверженные
-                      circuit-bending, видеомониторы, DIY управляющая плата
-                      (15х10х5 см), объект (15х15х15 см, 3D-печать, гипс),
-                      фоторезистор
-                    </span>
+                {/* Info box with materials button */}
+                <div className="relative max-w-full lg:max-w-[90%]">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-2 border-white/70 p-4 md:p-5">
+                    {/* Left: Title and type */}
+                    <div className="flex-1">
+                      <div className="text-lg md:text-xl">
+                        <span className="font-bold">Leir, федя лакихил</span>
+                        <br />
+                        <span>Интерактивная инсталляция</span>
+                      </div>
+                    </div>
+
+                    {/* Right: Materials button */}
+                    <div className="relative">
+                      <button
+                        onClick={() => setShowMaterials(!showMaterials)}
+                        className="
+                          group
+                          flex items-center justify-center
+                          px-5 py-3
+                          rounded-md
+                          border-3 border-[#373737]
+                          bg-[#373737]
+                          text-[#EAEAEA]
+                          text-base
+                          transition-all duration-200
+                          hover:bg-[#4a4a4a]
+                          whitespace-nowrap
+                        "
+                      >
+                        материалы
+                        
+                        {/* Desktop: Hover tooltip */}
+                        {!isMobile && (
+                          <div
+                            className={`
+                              absolute right-full mr-4 top-1/2 -translate-y-1/2
+                              w-72 p-4
+                              bg-[#373737] border-2 border-white/70
+                              rounded-md
+                              text-sm text-[#EAEAEA] leading-relaxed
+                              opacity-0 invisible
+                              group-hover:opacity-100 group-hover:visible
+                              transition-all duration-300
+                              pointer-events-none
+                              z-10
+                              ${showMaterials ? "opacity-100 !visible" : ""}
+                            `}
+                          >
+                            {materialsText}
+                            <div className="absolute top-1/2 -translate-y-1/2 -right-2 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-[#373737]" />
+                          </div>
+                        )}
+                      </button>
+
+                      {/* Mobile: Popup */}
+                      {isMobile && showMaterials && (
+                        <div
+                          className="
+                            fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                            w-[90vw] max-w-sm p-6
+                            bg-[#373737] border-2 border-white/70
+                            rounded-md
+                            text-sm text-[#EAEAEA] leading-relaxed
+                            z-50
+                            animate-in fade-in duration-200
+                          "
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <button
+                            onClick={() => setShowMaterials(false)}
+                            className="absolute top-2 right-2 text-white/70 hover:text-white text-2xl leading-none"
+                          >
+                            ×
+                          </button>
+                          {materialsText}
+                        </div>
+                      )}
+
+                      {/* Mobile: Backdrop */}
+                      {isMobile && showMaterials && (
+                        <div
+                          className="fixed inset-0 bg-black/50 z-40"
+                          onClick={() => setShowMaterials(false)}
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
 
@@ -185,7 +286,7 @@ export default function ProjectDetail2() {
                 Федя Лакихил — художник сферы новых медиа из России, родился и
                 вырос в городе Люберцы, живет и работает в Москве. Окончил в
                 2024 году магистратуру ArtTech — «Технологическое искусство»
-                НИТУ МИСИС. Работает в практике глитч-арта, создавая
+                НИТУ МИСИС. Работает в практике глитч-арта, с��здавая
                 инсталляции, фото- и видеоработы. Его работы выставлялись в
                 таких галереях, как РОСИЗО, Краснохолмская, ГРАУНД Солянка, ЗИЛ
                 (Москва), Волна (Выкса).
