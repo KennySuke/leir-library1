@@ -59,7 +59,7 @@ export default function ProjectDetail2() {
                 <div className="relative max-w-full max-w-[85%] lg:max-w-[58%] transition-all duration-500">
                   <div className="flex flex-col border-2 border-white/70 p-4 md:p-5 transition-all duration-500">
                     {/* Top row: Title and button */}
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-0">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-0 transition-all duration-500">
                       {/* Left: Title and type */}
                       <div className="flex-1">
                         <div className="text-lg md:text-xl">
