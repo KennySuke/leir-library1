@@ -154,7 +154,7 @@ export default function Art() {
                   ${isActive ? "aspect-square" : "aspect-[386/148]"}
                 `}
                 style={{
-                  minHeight: isActive ? "386px" : "148px",
+                  height: isActive ? "386px" : "148px",
                 }}
               >
                 <div className="relative w-full h-full overflow-hidden">
@@ -178,7 +178,12 @@ export default function Art() {
                     className="absolute top-0 object-cover left-0 pointer-events-none transition-all duration-500 w-full"
                     style={{ width: "100%", objectPosition: "left top" }}
                   />
-
+                  <img
+                    src="/stroke2.png"
+                    alt="stroke overlay"
+                    className="absolute top-0 object-cover right-0 pointer-events-none transition-all duration-500 w-full"
+                    style={{ width: "100%", objectPosition: "right bottom" }}
+                  />
 
                   {/* Название */}
                   <div
