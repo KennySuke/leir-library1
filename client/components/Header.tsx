@@ -79,6 +79,9 @@ export default function Header() {
               <Link to="/events" className={getLinkClass("/events")}>
                 events
               </Link>
+              <Link to="/commercial" className={getLinkClass("/commercial")}>
+                commercial
+              </Link>
               <Link to="/live-sound" className={getLinkClass("/live-sound")}>
                 live
                 <br />
@@ -92,11 +95,6 @@ export default function Header() {
                 <br />
                 staging
               </Link>
-              
-              <Link to="/commercial" className={getLinkClass("/commercial")}>
-                commercial
-              </Link>
-              
             </div>
 
             {/* MOBILE LEFT SLIDEBAR */}
