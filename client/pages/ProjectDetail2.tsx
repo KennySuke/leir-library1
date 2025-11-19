@@ -56,10 +56,10 @@ export default function ProjectDetail2() {
                 </div>
 
                 {/* Info box with materials button */}
-                <div className="relative max-w-full max-w-[85%] lg:max-w-[58%] transition-all duration-500">
-                  <div className="flex flex-col border-2 border-white/70 p-4 md:p-5 transition-all duration-500">
+                <div className="relative max-w-full max-w-[85%] lg:max-w-[58%]">
+                  <div className="flex flex-col border-2 border-white/70 p-4 md:p-5">
                     {/* Top row: Title and button */}
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-0 transition-all duration-500">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-0">
                       {/* Left: Title and type */}
                       <div className="flex-1">
                         <div className="text-lg md:text-xl">
@@ -133,7 +133,7 @@ export default function ProjectDetail2() {
                 {/* Description */}
                 <div className="text-base md:text-lg lg:text-xl text-justify leading-relaxed lg:max-w-[90%]">
                   <p className="mb-4">
-                    Работа явля��тся site-specific для выставки глитч-арта в
+                    Работа является site-specific для выставки глитч-арта в
                     галерее Краснохолмская. Глитч - ошибка в системе, которая
                     создана человеком. Рассматривая институцию галереи, как
                     систему с присущими ей правилами, художники размышляют о
