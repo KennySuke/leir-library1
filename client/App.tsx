@@ -27,19 +27,13 @@ const AppContent = () => {
       <Route path="/statement" element={<Statement />} />
       <Route path="/projects" element={<Placeholder title="Projects" />} />
       <Route path="/about" element={<Placeholder title="About" />} />
-      <Route
-        path="/live-sound"
-        element={<Placeholder title="Live Sound" />}
-      />
+      <Route path="/live-sound" element={<Placeholder title="Live Sound" />} />
       <Route
         path="/light-staging"
         element={<Placeholder title="Light Staging" />}
       />
       <Route path="/events" element={<Placeholder title="Events" />} />
-      <Route
-        path="/commercial"
-        element={<Placeholder title="Commercial" />}
-      />
+      <Route path="/commercial" element={<Placeholder title="Commercial" />} />
       <Route path="/art" element={<Art />} />
       <Route path="/projects/project-1" element={<Placeholder />} />
       <Route path="/projects/project-2" element={<ProjectDetail2 />} />

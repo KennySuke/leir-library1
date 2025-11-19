@@ -14,7 +14,7 @@ interface VisitorData {
 async function sendTelegramNotification(
   botToken: string,
   chatId: string,
-  visitorData: VisitorData
+  visitorData: VisitorData,
 ) {
   const message = formatVisitorMessage(visitorData);
 
@@ -32,7 +32,10 @@ async function sendTelegramNotification(
     });
 
     if (!response.ok) {
-      console.error("Failed to send Telegram notification:", response.statusText);
+      console.error(
+        "Failed to send Telegram notification:",
+        response.statusText,
+      );
     }
   } catch (error) {
     console.error("Error sending Telegram notification:", error);
